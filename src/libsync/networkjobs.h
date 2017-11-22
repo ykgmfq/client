@@ -362,7 +362,8 @@ public:
     enum AuthType {
         Basic, // also the catch-all fallback for backwards compatibility reasons
         OAuth,
-        Shibboleth
+        Shibboleth,
+        WebViewFlow
     };
 
     explicit DetermineAuthTypeJob(AccountPtr account, QObject *parent = 0);
